@@ -1,0 +1,82 @@
+
+<section ng-controller="HomeController" style="background-color:powderblue;">
+  <div style="background-image: url('http://www.mrwallpaper.com/wallpapers/sunset-over-clouds-851x315.jpg'); background-repeat: no-repeat; background-size: 100% 100%;" class="jumbotron jumbotron-fluid">
+      <center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="lead">
+        Share it with the rest of the world...
+      </h1></center>
+  </div>
+   
+  <div>
+    <center>
+    <h2 class="lead">Welcome to Blurb!</h2>
+    <p class="lead">Blurb is a place where everyone is encouraged to share their crazy, random thoughts.</p>
+    <p class="lead">(◑﹏◐)</p>
+    </center>
+  </div>
+
+  
+  <br>
+  <div class="well">
+    <div class="row" style="background-color:white;">
+    <div >
+    <center>
+       <div class="social-account-container" ng-hide="isConnectedSocialAccount('facebook')">
+      <img ng-src="/modules/users/client/img/buttons/facebook.png">
+      <a class="btn btn-success btn-remove-account" href="/api/auth/facebook" target="_self">
+        <i class="glyphicon glyphicon-plus"></i>
+      </a>
+      </div>
+    
+      <div class="social-account-container" ng-hide="isConnectedSocialAccount('twitter')">
+      <img ng-src="/modules/users/client/img/buttons/twitter.png">
+      <a class="btn btn-success btn-remove-account" href="/api/auth/twitter" target="_self">
+        <i class="glyphicon glyphicon-plus"></i>
+      </a>
+      </div>
+    
+      <div class="social-account-container" ng-hide="isConnectedSocialAccount('google')">
+      <img ng-src="/modules/users/client/img/buttons/google.png">
+      <a class="btn btn-success btn-remove-account" href="/api/auth/google" target="_self">
+        <i class="glyphicon glyphicon-plus"></i>
+      </a>
+      </div>
+    
+       <div class="social-account-container" ng-hide="isConnectedSocialAccount('linkedin')">
+      <img ng-src="/modules/users/client/img/buttons/linkedin.png">
+      <a class="btn btn-success btn-remove-account" href="/api/auth/linkedin" target="_self">
+        <i class="glyphicon glyphicon-plus"></i>
+      </a>
+      </div>
+    
+       <div class="social-account-container" ng-hide="isConnectedSocialAccount('github')">
+      <img ng-src="/modules/users/client/img/buttons/github.png">
+      <a class="btn btn-success btn-remove-account" href="/api/auth/github" target="_self">
+        <i class="glyphicon glyphicon-plus"></i>
+      </a>
+      </div>
+    
+    <div class="social-account-container" ng-hide="isConnectedSocialAccount('paypal')">
+      <img ng-src="/modules/users/client/img/buttons/paypal.png">
+      <a class="btn btn-success btn-remove-account" href="/api/auth/paypal" target="_self">
+        <i class="glyphicon glyphicon-plus"></i>
+      </a>
+    </div>
+    </center>
+    </div>
+  </div>
+  </div>
+</section>
